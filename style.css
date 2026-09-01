@@ -1,7 +1,9 @@
 /* ==========================================================================
    Base Styles & Reset
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,13 +44,16 @@ a {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #000000;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2b2b2b;
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #444444;
 }
@@ -132,14 +137,12 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.04) 25%,
-    rgba(255, 255, 255, 0.14) 50%,
-    rgba(255, 255, 255, 0.04) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.04) 25%,
+      rgba(255, 255, 255, 0.14) 50%,
+      rgba(255, 255, 255, 0.04) 75%,
+      rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
   transition: opacity 0.35s ease, background 0.35s ease;
 }
@@ -152,14 +155,12 @@ a {
 }
 
 .navbar.scrolled::after {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.06) 25%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.06) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.06) 25%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.06) 75%,
+      rgba(255, 255, 255, 0) 100%);
   box-shadow: none;
 }
 
@@ -611,7 +612,8 @@ a {
   margin-bottom: 8px;
 }
 
-.section-tag, .mono-tag {
+.section-tag,
+.mono-tag {
   font-family: var(--font-body);
   font-size: 16px;
   font-weight: 700;
@@ -851,7 +853,8 @@ a {
   flex: 1;
 }
 
-.journey-node:hover, .journey-node.active {
+.journey-node:hover,
+.journey-node.active {
   border: 1px solid rgba(255, 77, 48, 0.5);
   background: rgba(255, 77, 48, 0.05);
 }
@@ -866,7 +869,8 @@ a {
   transition: color 0.2s ease;
 }
 
-.journey-node:hover .node-icon, .journey-node.active .node-icon {
+.journey-node:hover .node-icon,
+.journey-node.active .node-icon {
   color: #ff4d30;
 }
 
@@ -896,6 +900,7 @@ a {
   user-select: none;
   flex-shrink: 0;
 }
+
 /* Tooltip Popup (Customer Journey Nodes - Pure Theme Black) */
 .node-tooltip {
   position: absolute;
@@ -936,6 +941,7 @@ a {
     opacity: 0;
     transform: translate(-50%, -4px);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, 0);
@@ -1123,24 +1129,32 @@ a {
    Responsive Adaptations for Experience Section
    ========================================================================== */
 @media (max-width: 1180px) {
-  .exp-card-top-grid, .quant-main-grid {
+
+  .exp-card-top-grid,
+  .quant-main-grid {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
   .quant-right-col {
     justify-content: flex-start;
   }
+
   .tech-pills-row {
     justify-content: flex-start;
   }
-  .top-metrics-col, .quant-outcomes-row {
+
+  .top-metrics-col,
+  .quant-outcomes-row {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding-top: 20px;
   }
+
   .three-col-scope {
     flex-direction: column;
     gap: 28px;
   }
+
   .scope-vertical-divider {
     display: none;
   }
@@ -1153,20 +1167,27 @@ a {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .exp-card, .exp-card-02 {
+
+  .exp-card,
+  .exp-card-02 {
     padding: 24px 20px;
   }
+
   .journey-steps-row {
     overflow-x: auto;
     padding-bottom: 12px;
   }
-  .top-metrics-col, .quant-outcomes-row {
+
+  .top-metrics-col,
+  .quant-outcomes-row {
     flex-direction: column;
     gap: 20px;
   }
+
   .metric-divider {
     display: none;
   }
+
   .node-tooltip {
     left: 0;
     transform: none;
@@ -1996,54 +2017,76 @@ a {
   .navbar {
     padding: 20px 32px;
   }
-  .hero-section, .brands-section, .about-section, .experience-section, .projects-section, .thinking-section, .toolbox-section, .credentials-section, .contact-terminal-section {
+
+  .hero-section,
+  .brands-section,
+  .about-section,
+  .experience-section,
+  .projects-section,
+  .thinking-section,
+  .toolbox-section,
+  .credentials-section,
+  .contact-terminal-section {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .hero-services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
+
   .about-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .about-right {
     margin-top: 60px;
     padding: 0;
   }
+
   .projects-side-by-side-card {
     grid-template-columns: 1fr;
   }
+
   .project-col-block:first-child {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
+
   .project-col-block {
     padding: 36px 28px;
   }
+
   .col-metrics-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
   .col-metrics-grid .metric-divider {
     display: none;
   }
+
   .pipeline-col-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .thinking-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   .toolbox-editorial-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
+
   .credentials-archive-grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
+
   .archive-vertical-divider {
     display: none;
   }
@@ -2053,51 +2096,65 @@ a {
   .nav-links {
     display: none;
   }
+
   .hero-top-row {
     flex-direction: column;
     gap: 24px;
   }
+
   .hero-quote-group {
     max-width: 100%;
   }
+
   .hero-services-grid {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
+
   .brands-grid {
     gap: 28px;
   }
+
   .about-right {
     margin-top: 48px;
     padding: 0;
   }
-  .project-col-block, .thinking-card {
+
+  .project-col-block,
+  .thinking-card {
     padding: 28px 20px;
   }
+
   .pipeline-col-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .thinking-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
   .toolbox-editorial-grid {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
   .hero-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
+
   .hero-resume-btn {
     align-self: flex-start;
   }
+
   .contact-story-resume-box {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
   }
+
   .site-bottom-footer {
     display: flex;
     flex-direction: column;
@@ -2106,6 +2163,7 @@ a {
     gap: 22px;
     padding-top: 24px;
   }
+
   .bottom-easter-egg {
     order: 1;
     position: static;
@@ -2114,6 +2172,7 @@ a {
     text-align: center;
     white-space: normal;
   }
+
   .footer-left-block {
     order: 2;
     align-items: center;

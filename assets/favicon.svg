@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="orangeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b4a"/>
+      <stop offset="100%" stop-color="#ff4218"/>
+    </linearGradient>
+    <mask id="kCutoutLower">
+      <!-- White base reveals letters -->
+      <rect width="64" height="64" fill="#ffffff"/>
+      <!-- Circular cutout notch with 3px negative space gap around the circle in lower leg of K -->
+      <circle cx="44" cy="40" r="6.8" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <!-- Dark container background with subtle glowing accent border -->
+  <rect width="64" height="64" rx="15" fill="#080808"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#ff5e3a" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <g fill="#ffffff">
+    <!-- Thicker, Broader Letter N -->
+    <polygon points="9.5,48 9.5,16 16.5,16 25,35 25,16 31.5,16 31.5,48 24.5,48 16,29 16,48"/>
+    
+    <!-- Thicker, Broader Letter K with circular cutout on the lower leg -->
+    <g mask="url(#kCutoutLower)">
+      <!-- K Stem -->
+      <rect x="34.5" y="16" width="6.8" height="32"/>
+      <!-- K Upper diagonal arm (solid) -->
+      <polygon points="36,34 47.5,16 54.5,16 39.5,37"/>
+      <!-- K Lower diagonal arm with cutout -->
+      <polygon points="37.5,29 54,48 46.5,48 34.5,34"/>
+    </g>
+  </g>
+
+  <!-- Glowing orange accent circle nestled inside the lower cut with uniform gap -->
+  <circle cx="44" cy="40" r="3.9" fill="url(#orangeGlow)"/>
+</svg>
