@@ -8,7 +8,6 @@
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="Niranjan Kannan — Portfolio | Enterprise GTM, Product & Strategy">
-  <meta name="description" content="Niranjan Kannan's Portfolio — Working across Enterprise Business, GTM, Product, Data & Analytics, and Markets. Built for the messy middle.">
   <meta name="author" content="Niranjan Kannan">
   <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://nxjndata.github.io/Portfolio-Website/">
@@ -23,21 +22,19 @@
   <meta property="og:url" content="https://nxjndata.github.io/Portfolio-Website/">
   <meta property="og:site_name" content="Niranjan Kannan">
   <meta property="og:title" content="Niranjan Kannan — Portfolio | Enterprise GTM, Product & Strategy">
-  <meta property="og:description" content="Working across Enterprise Business, GTM, Product, Data & Analytics, and Markets. Built for the messy middle.">
   <meta property="og:image" content="https://nxjndata.github.io/Portfolio-Website/assets/og-image.jpg">
   <meta property="og:image:secure_url" content="https://nxjndata.github.io/Portfolio-Website/assets/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Niranjan Kannan — Portfolio Preview">
+  <meta property="og:image:alt" content="Niranjan Kannan">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://nxjndata.github.io/Portfolio-Website/">
   <meta name="twitter:title" content="Niranjan Kannan — Portfolio | Enterprise GTM, Product & Strategy">
-  <meta name="twitter:description" content="Working across Enterprise Business, GTM, Product, Data & Analytics, and Markets. Built for the messy middle.">
   <meta name="twitter:image" content="https://nxjndata.github.io/Portfolio-Website/assets/og-image.jpg">
-  <meta name="twitter:image:alt" content="Niranjan Kannan — Portfolio Preview">
+  <meta name="twitter:image:alt" content="Niranjan Kannan">
 
   <!-- Google Fonts: Outfit, Plus Jakarta Sans, Instrument Serif & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +42,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5.8">
+  <link rel="stylesheet" href="style.css?v=5.9">
 </head>
 
 <body>
@@ -62,7 +59,31 @@
   <!-- Top Navigation -->
   <header class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">NK</a>
+      <a href="#" class="logo" aria-label="Niranjan Kannan Home">
+        <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="navOrangeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff6b4a"/>
+              <stop offset="100%" stop-color="#ff4218"/>
+            </linearGradient>
+            <mask id="navKCutoutLower">
+              <rect width="64" height="64" fill="#ffffff"/>
+              <circle cx="44" cy="40" r="6.8" fill="#000000"/>
+            </mask>
+          </defs>
+          <rect width="64" height="64" rx="15" fill="#0c0c0c"/>
+          <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#ff5e3a" stroke-width="1.2" stroke-opacity="0.35"/>
+          <g fill="#ffffff">
+            <polygon points="9.5,48 9.5,16 16.5,16 25,35 25,16 31.5,16 31.5,48 24.5,48 16,29 16,48"/>
+            <g mask="url(#navKCutoutLower)">
+              <rect x="34.5" y="16" width="6.8" height="32"/>
+              <polygon points="36,34 47.5,16 54.5,16 39.5,37"/>
+              <polygon points="37.5,29 54,48 46.5,48 34.5,34"/>
+            </g>
+          </g>
+          <circle cx="44" cy="40" r="3.9" fill="url(#navOrangeGlow)"/>
+        </svg>
+      </a>
       <nav class="nav-links">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
