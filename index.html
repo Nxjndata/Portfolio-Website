@@ -60,28 +60,29 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="#" class="logo" aria-label="Niranjan Kannan Home">
-        <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo-svg" viewBox="0 0 72 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="navOrangeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id="navOrangeDot" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#ff6b4a"/>
               <stop offset="100%" stop-color="#ff4218"/>
             </linearGradient>
-            <mask id="navKCutoutLower">
-              <rect width="64" height="64" fill="#ffffff"/>
-              <circle cx="44" cy="40" r="6.8" fill="#000000"/>
+            <mask id="navKMask">
+              <rect width="72" height="32" fill="#ffffff"/>
+              <circle cx="55.5" cy="23" r="5.9" fill="#000000"/>
             </mask>
           </defs>
-          <rect width="64" height="64" rx="15" fill="#0c0c0c"/>
-          <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#ff5e3a" stroke-width="1.2" stroke-opacity="0.35"/>
           <g fill="#ffffff">
-            <polygon points="9.5,48 9.5,16 16.5,16 25,35 25,16 31.5,16 31.5,48 24.5,48 16,29 16,48"/>
-            <g mask="url(#navKCutoutLower)">
-              <rect x="34.5" y="16" width="6.8" height="32"/>
-              <polygon points="36,34 47.5,16 54.5,16 39.5,37"/>
-              <polygon points="37.5,29 54,48 46.5,48 34.5,34"/>
+            <!-- Wide Letter N -->
+            <polygon points="4,28 4,4 11,4 24.5,21.5 24.5,4 31,4 31,28 24,28 10.5,10.5 10.5,28"/>
+            <!-- Wide Letter K with lower circular cutout -->
+            <g mask="url(#navKMask)">
+              <rect x="35.5" y="4" width="7" height="24"/>
+              <polygon points="38.5,18 56,4 65,4 44,21"/>
+              <polygon points="41.5,14 64.5,28 55.5,28 36,18.5"/>
             </g>
           </g>
-          <circle cx="44" cy="40" r="3.9" fill="url(#navOrangeGlow)"/>
+          <!-- Glowing orange dot nestled in the lower leg -->
+          <circle cx="55.5" cy="23" r="3.4" fill="url(#navOrangeDot)"/>
         </svg>
       </a>
       <nav class="nav-links">
