@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niranjan Kannan — Creative Director & Portfolio</title>
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Instrument Serif & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5.7">
+</head>
+
+<body>
+
+  <!-- Netflix Cinematic Intro Overlay (Dedicated High-Performance Canvas) -->
+  <div id="netflix-intro" class="netflix-intro">
+    <canvas id="intro-canvas"></canvas>
+  </div>
+
+  <!-- Background Scroll Animation Canvas (Persists Throughout Whole Page) -->
+  <canvas id="canvas"></canvas>
+  <div class="canvas-ambient-overlay"></div>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">NK</a>
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">
+        <span>Get in touch</span>
+        <div class="cta-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper (Floats seamlessly over the scroll animation) -->
+  <main class="page-content">
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="section-container hero-container">
+
+        <div class="hero-top-row">
+          <div class="hero-title-group">
+            <span class="hero-greeting">Hey, I'm </span>
+            <h1 class="hero-title">Niranjan<br>Kannan</h1>
+          </div>
+
+          <div class="hero-quote-group">
+            <h3 class="hero-quote-title">Built for the messy middle.<br></h3>
+            <p class="hero-quote-desc">Too curious to stay in one lane.<br>Business, Tech, Markets</p>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Bar: 4 Services Pillars + VIEW RESUME ↗ (Bottom Right) -->
+        <div class="hero-bottom-bar">
+          <div class="hero-services-grid">
+            <div class="service-item">
+              <span class="service-num">// 01</span>
+              <span class="service-label">CLIENTS</span>
+            </div>
+            <div class="service-item">
+              <span class="service-num">// 02</span>
+              <span class="service-label">PRODUCTS</span>
+            </div>
+            <div class="service-item">
+              <span class="service-num">// 03</span>
+              <span class="service-label">SYSTEMS</span>
+            </div>
+            <div class="service-item">
+              <span class="service-num">// 04</span>
+              <span class="service-label">MARKETS</span>
+            </div>
+          </div>
+
+          <!-- Small Hero Resume CTA -->
+          <a href="https://docs.google.com/document/d/1NgRssnexe0xdr4aTqPyL7jJHcPqORazdeb7kAWC-bGk/edit?usp=sharing" target="_blank" rel="noopener" class="hero-resume-btn" aria-label="View Resume">
+            <span>VIEW RESUME ↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Things I've Worked Across (Clean Text & Icons) -->
+    <section class="brands-section">
+      <div class="brands-glass-card">
+        <span class="brands-label">THINGS I'VE WORKED ACROSS<br></span>
+        <div class="brands-grid">
+
+          <!-- 1. Enterprise Business -->
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+              <path d="M9 22v-4h6v4" />
+              <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01" />
+            </svg>
+            <span>ENTERPRISE BUSINESS</span>
+          </div>
+
+          <!-- 2. GTM -->
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+              <path
+                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+            </svg>
+            <span>GTM</span>
+          </div>
+
+          <!-- 3. Product -->
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+            </svg>
+            <span>PRODUCT</span>
+          </div>
+
+          <!-- 4. Data & Analytics -->
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18" />
+              <path d="m19 9-5 5-4-4-3 3" />
+              <path d="M14 9h5v5" />
+            </svg>
+            <span>DATA & ANALYTICS</span>
+          </div>
+
+          <!-- 5. Markets -->
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+            </svg>
+            <span>MARKETS</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The Messy Middle (Clean Text & CTA) -->
+    <section class="about-section" id="about">
+      <div class="section-container about-container">
+
+        <div class="about-left">
+          <span class="section-tag">The Messy Middle</span>
+          <h2 class="about-title">Figuring out<br>What happens<br>In between</h2>
+        </div>
+
+        <div class="about-right">
+          <p class="about-desc">
+            I work where customers, business and technology overlap.<br>
+            Usually, the interesting problems are messy.
+          </p>
+
+          <div class="hybrid-quote">
+            <p class="hybrid-line">Not quite a PM.</p>
+            <p class="hybrid-line">Not quite a Closer.</p>
+            <p class="hybrid-line">Not quite a data nerd.</p>
+            <p class="hybrid-accent">Probably all three.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 03 / EXPERIENCE — THE WORK -->
+    <section class="experience-section" id="experience">
+      <div class="section-container experience-container">
+
+        <!-- 03 / Section Header -->
+        <div class="exp-header-block">
+          <span class="section-tag">Experience</span>
+          <h2 class="exp-main-title">The Problems<br>Were Rarely Neat.</h2>
+        </div>
+
+        <!-- ========================================================
+             EXPERIENCE 01 — COINDCX
+             ======================================================== -->
+        <div class="exp-card">
+
+          <!-- Top Row: Left Info | Middle Statement & Copy | Right 3 Metrics -->
+          <div class="exp-card-top-grid">
+
+            <div class="top-left-col">
+              <span class="card-mono-tag">Experience / 01</span>
+              <h3 class="card-company-name">CoinDCX</h3>
+              <span class="card-unit-name">ENTERPRISE BUSINESS</span>
+              <span class="card-role-title">Business Development Executive</span>
+              <span class="card-meta-line">SEP 2025 — JUL 2026 &nbsp;·&nbsp; BENGALURU</span>
+            </div>
+
+            <div class="top-mid-col">
+              <h4 class="top-headline">WE DIDN’T INHERIT THE PLAYBOOK. WE WROTE IT.</h4>
+              <p class="top-body-copy">
+                One of the first three on Enterprise GTM, working alongside the VP & Senior Manager to build the
+                institutional business from the ground up.
+
+              </p>
+            </div>
+
+            <div class="top-metrics-col">
+              <div class="metric-block">
+                <span class="metric-big-num" data-target="11" data-prefix="" data-suffix="" data-pad="2">11</span>
+                <span class="metric-sub-label">INSTITUTIONAL TRADING FIRMS ONBOARDED</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-block">
+                <span class="metric-big-num" data-target="3" data-prefix="$" data-suffix="B+">0</span>
+                <span class="metric-sub-label">TRADING VOLUME ACROSS ONBOARDED INSTITUTIONAL BUSINESS</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-block">
+                <span class="metric-big-num" data-target="2500" data-prefix="" data-suffix="+"
+                  data-comma="true">0</span>
+                <span class="metric-sub-label">OUTBOUND CALLS</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="exp-card-inner-divider"></div>
+
+          <!-- Below Customer Journey — Three Columns -->
+          <div class="job-actual-grid three-col-scope">
+
+            <div class="job-actual-col">
+              <h5 class="job-col-title">01 — DISCOVERY</h5>
+              <ul class="job-col-list">
+                <li><span class="list-bullet">»</span> Customer discovery</li>
+                <li><span class="list-bullet">»</span> Requirements gathering</li>
+                <li><span class="list-bullet">»</span> Technical discussions</li>
+              </ul>
+            </div>
+
+            <div class="scope-vertical-divider"></div>
+
+            <div class="job-actual-col">
+              <h5 class="job-col-title">02 — SOLUTIONING</h5>
+              <ul class="job-col-list">
+                <li><span class="list-bullet">»</span> Technical solutioning</li>
+                <li><span class="list-bullet">»</span> API integrations</li>
+                <li><span class="list-bullet">»</span> Trading infrastructure</li>
+                <li><span class="list-bullet">»</span> Cross-functional coordination</li>
+              </ul>
+            </div>
+
+            <div class="scope-vertical-divider"></div>
+
+            <div class="job-actual-col">
+              <h5 class="job-col-title">03 — EXECUTION</h5>
+              <ul class="job-col-list">
+                <li><span class="list-bullet">»</span> Customer onboarding</li>
+                <li><span class="list-bullet">»</span> Production readiness</li>
+                <li><span class="list-bullet">»</span> Activation</li>
+                <li><span class="list-bullet">»</span> Product adoption</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ========================================================
+             EXPERIENCE 02 — QUANTITATIVE ANALYST
+             ======================================================== -->
+        <div class="exp-card exp-card-02">
+
+          <!-- Top Info Header -->
+          <div class="quant-header-row">
+            <span class="card-mono-tag">Experience / 02</span>
+            <h3 class="card-company-name">Quantitative Analyst</h3>
+            <span class="card-unit-name">FINANCIAL RISK & REPORTING OPTIMIZATION &nbsp;·&nbsp; FREELANCE</span>
+            <span class="card-meta-line">SEP 2024 — AUG 2025 &nbsp;·&nbsp; CHENNAI / REMOTE</span>
+          </div>
+
+          <div class="exp-card-inner-divider"></div>
+
+          <!-- Two-Column Main Content: Left Description | Right Tech Stack -->
+          <div class="quant-main-grid">
+            <div class="quant-left-col">
+              <h4 class="quant-headline">Building the Data Layer</h4>
+              <p class="quant-desc">
+                Built financial data workflows across APIs, ETL pipelines, validation systems and analytics to make
+                reporting faster and more reliable.
+              </p>
+            </div>
+
+            <div class="quant-right-col">
+              <div class="tech-pills-row">
+                <span class="tech-pill">PYTHON</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">ETL</span>
+                <span class="tech-pill">BROKER APIs</span>
+                <span class="tech-pill">MONTE CARLO</span>
+                <span class="tech-pill">SENTIMENT</span>
+                <span class="tech-pill">POWER BI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card-inner-divider"></div>
+
+          <!-- Outcomes Horizontal Metric Row -->
+          <div class="quant-outcomes-row">
+            <div class="metric-block">
+              <span class="metric-big-num" data-target="5" data-prefix="~" data-suffix="%">0</span>
+              <span class="metric-sub-label">IMPROVEMENT IN CAPITAL ALLOCATION DECISIONS</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-block">
+              <span class="metric-big-num" data-target="20" data-prefix="" data-suffix="%">0</span>
+              <span class="metric-sub-label">REDUCTION IN COMPLIANCE REPORTING ERRORS</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-block">
+              <span class="metric-big-num" data-target="30" data-prefix="" data-suffix="%">0</span>
+              <span class="metric-sub-label">REDUCTION IN REPORTING LATENCY</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Minimal Transition Bar -->
+        <div class="exp-footer-bar">
+          <a href="#projects" class="next-projects-link">NEXT: THINGS I'VE BUILT →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 04 / PROJECTS -->
+    <section class="projects-section" id="projects">
+      <div class="section-container projects-container">
+
+        <!-- 04 / Section Header -->
+        <div class="projects-header-block">
+          <span class="section-tag">Projects</span>
+          <h2 class="projects-main-title">I Build Things<br>To See If They Work.</h2>
+          <p class="projects-sub-copy">Side projects, experiments, and systems built around problems I found
+            interesting.</p>
+        </div>
+
+        <!-- ========================================================
+             TWO-COLUMN SIDE-BY-SIDE PROJECTS CONTAINER
+             ======================================================== -->
+        <div class="projects-side-by-side-card">
+
+          <!-- COLUMN 01: ALPHABOT -->
+          <div class="project-col-block">
+
+            <!-- Top Metadata -->
+            <div class="project-col-header">
+              <span class="card-mono-tag">PROJECT / 01</span>
+              <span class="project-cat-badge">AI × MARKETS</span>
+            </div>
+
+            <!-- Title & Narrative -->
+            <div class="project-col-body">
+              <h3 class="project-title">Alphabot</h3>
+              <p class="project-editorial-quote">“What if an equity research analyst had enough coffee to fight a bear?”
+              </p>
+              <p class="project-desc">
+                An AI-powered stock-selection engine combining market data, machine learning and automated research
+                workflows.
+              </p>
+
+              <!-- Tech Tags -->
+              <div class="tech-pills-row">
+                <span class="tech-pill">PYTHON</span>
+                <span class="tech-pill">LSTM</span>
+                <span class="tech-pill">XGBOOST</span>
+                <span class="tech-pill">PANDAS</span>
+                <span class="tech-pill">NUMPY</span>
+                <span class="tech-pill">APIs</span>
+              </div>
+            </div>
+
+            <div class="exp-card-inner-divider"></div>
+
+            <!-- Numerical Metrics -->
+            <div class="project-metrics-grid col-metrics-grid">
+              <div class="metric-block">
+                <span class="metric-big-num" data-target="88.7" data-prefix="" data-suffix="%"
+                  data-decimals="1">0.0%</span>
+                <span class="metric-sub-label">PREDICTION ACCURACY</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-block">
+                <span class="metric-big-num" data-target="13.7" data-prefix="" data-suffix="%"
+                  data-decimals="1">0.0%</span>
+                <span class="metric-sub-label">PORTFOLIO RETURN UPLIFT</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-block">
+                <span class="metric-big-num metric-stat-compact" data-target="25" data-prefix=""
+                  data-suffix="+ HRS/WEEK">0</span>
+                <span class="metric-sub-label">MANUAL RESEARCH AUTOMATED</span>
+              </div>
+            </div>
+
+            <div class="exp-card-inner-divider"></div>
+
+            <!-- Bottom Action CTA -->
+            <div class="project-actions-row">
+              <a href="https://github.com/Nxjndata/Algo-Trading-Bot" target="_blank" rel="noopener"
+                class="project-btn-primary">VIEW ON GITHUB ↗</a>
+            </div>
+
+          </div>
+
+          <!-- COLUMN 02: FINANCIAL DATA PIPELINE -->
+          <div class="project-col-block">
+
+            <!-- Top Metadata -->
+            <div class="project-col-header">
+              <span class="card-mono-tag">PROJECT / 02</span>
+              <span class="project-cat-badge">DATA INFRASTRUCTURE</span>
+            </div>
+
+            <!-- Title & Narrative -->
+            <div class="project-col-body">
+              <h3 class="project-title">Financial Data Pipeline</h3>
+              <p class="project-editorial-quote">“Because copying data between spreadsheets is not a personality trait.”
+              </p>
+              <p class="project-desc">
+                A production-style ETL pipeline that extracts, transforms, validates and loads market data from multiple
+                APIs into a SQL database.
+              </p>
+
+              <!-- Tech Tags -->
+              <div class="tech-pills-row">
+                <span class="tech-pill">PYTHON</span>
+                <span class="tech-pill">MYSQL</span>
+                <span class="tech-pill">DOCKER</span>
+                <span class="tech-pill">APIs</span>
+              </div>
+            </div>
+
+            <div class="exp-card-inner-divider"></div>
+
+            <!-- Compact Pipeline Architecture Flow -->
+            <div class="pipeline-flow-wrapper">
+              <span class="section-micro-label">PIPELINE ARCHITECTURE</span>
+              <div class="pipeline-col-grid">
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">01</span>
+                  <span class="pipe-col-label">MARKET APIs</span>
+                </div>
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">02</span>
+                  <span class="pipe-col-label">EXTRACT</span>
+                </div>
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">03</span>
+                  <span class="pipe-col-label">TRANSFORM</span>
+                </div>
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">04</span>
+                  <span class="pipe-col-label">VALIDATE</span>
+                </div>
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">05</span>
+                  <span class="pipe-col-label">SQL</span>
+                </div>
+                <div class="pipe-col-node">
+                  <span class="pipe-step-tag">06</span>
+                  <span class="pipe-col-label">ANALYTICS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-card-inner-divider"></div>
+
+            <!-- Bottom Action CTA -->
+            <div class="project-actions-row">
+              <a href="https://github.com/Nxjndata/ETL-Finance-Pipeline" target="_blank" rel="noopener"
+                class="project-btn-primary">VIEW ON GITHUB ↗</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Minimal Projects Transition Bar -->
+        <div class="exp-footer-bar">
+          <a href="#how-i-think" class="next-projects-link">NEXT: HOW I THINK →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 05 / HOW I THINK -->
+    <section class="thinking-section" id="how-i-think">
+      <div class="section-container thinking-container">
+
+        <!-- 05 / Section Header -->
+        <div class="thinking-header-block">
+          <span class="section-tag">How I Think</span>
+          <h2 class="thinking-main-title">How I Think<br>When Things Get Messy.</h2>
+        </div>
+
+        <!-- 4 Principles Grid -->
+        <div class="thinking-grid">
+
+          <!-- 01 -->
+          <div class="thinking-card">
+            <div class="thinking-card-top">
+              <span class="thinking-num">01</span>
+              <div class="thinking-line-dot"></div>
+            </div>
+            <h3 class="thinking-card-title">START WITH THE PROBLEM</h3>
+            <p class="thinking-card-desc">
+              The feature request is rarely<br>the real problem.
+            </p>
+          </div>
+
+          <!-- 02 -->
+          <div class="thinking-card">
+            <div class="thinking-card-top">
+              <span class="thinking-num">02</span>
+              <div class="thinking-line-dot"></div>
+            </div>
+            <h3 class="thinking-card-title">FOLLOW THE LEVERAGE</h3>
+            <p class="thinking-card-desc">
+              Who actually controls the thing<br>that matters?
+            </p>
+          </div>
+
+          <!-- 03 -->
+          <div class="thinking-card">
+            <div class="thinking-card-top">
+              <span class="thinking-num">03</span>
+              <div class="thinking-line-dot"></div>
+            </div>
+            <h3 class="thinking-card-title">LOOK AT THE SYSTEM</h3>
+            <p class="thinking-card-desc">
+              Nothing operates in isolation.<br>Follow the connections.
+            </p>
+          </div>
+
+          <!-- 04 -->
+          <div class="thinking-card">
+            <div class="thinking-card-top">
+              <span class="thinking-num">04</span>
+              <div class="thinking-line-dot"></div>
+            </div>
+            <h3 class="thinking-card-title">MEASURE WHAT CHANGED</h3>
+            <p class="thinking-card-desc">
+              If the outcome didn't move,<br>the solution probably didn't matter.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Minimal Thinking Transition Bar -->
+        <div class="exp-footer-bar">
+          <a href="#toolbox" class="next-projects-link">NEXT: THE TOOLBOX →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         07 / TOOLBOX
+         ======================================================== -->
+    <section class="toolbox-section" id="toolbox">
+      <div class="section-container toolbox-container">
+
+        <!-- 07 / Section Header -->
+        <div class="toolbox-header-block">
+          <span class="section-tag">Skills</span>
+          <h2 class="toolbox-main-title">The Toolbox</h2>
+          <p class="toolbox-sub-copy">Things I use to move from a problem to something that works.</p>
+        </div>
+
+        <!-- Editorial 4-Category Layout -->
+        <div class="toolbox-editorial-grid">
+
+          <!-- Column 1: BUSINESS -->
+          <div class="toolbox-col">
+            <span class="toolbox-col-label">BUSINESS</span>
+            <ul class="toolbox-skills-list">
+              <li>Enterprise GTM</li>
+              <li>Customer Discovery</li>
+              <li>B2B</li>
+              <li>Solutioning</li>
+              <li>Stakeholder Management</li>
+            </ul>
+          </div>
+
+          <!-- Column 2: PRODUCT -->
+          <div class="toolbox-col">
+            <span class="toolbox-col-label">PRODUCT</span>
+            <ul class="toolbox-skills-list">
+              <li>Requirements</li>
+              <li>Product Discovery</li>
+              <li>User Journeys</li>
+              <li>Adoption</li>
+              <li>Cross-functional Execution</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: TECH -->
+          <div class="toolbox-col">
+            <span class="toolbox-col-label">TECH</span>
+            <ul class="toolbox-skills-list">
+              <li>APIs</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>ETL</li>
+              <li>Docker</li>
+              <li>WebSockets</li>
+              <li>Webhooks</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: DATA / AI -->
+          <div class="toolbox-col">
+            <span class="toolbox-col-label">DATA / AI</span>
+            <ul class="toolbox-skills-list">
+              <li>Machine Learning</li>
+              <li>LSTM</li>
+              <li>XGBoost</li>
+              <li>Data Analytics</li>
+              <li>LLMs</li>
+              <li>GenAI</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         08 / EDUCATION & CREDENTIALS
+         ======================================================== -->
+    <section class="credentials-section" id="credentials">
+      <div class="section-container credentials-container">
+
+        <!-- 08 / Section Header -->
+        <div class="credentials-header-block">
+          <span class="section-tag">Education & Credentials</span>
+        </div>
+
+        <!-- Archive Document Entry Layout -->
+        <div class="credentials-archive-grid">
+
+          <!-- Education Column -->
+          <div class="archive-edu-block">
+            <h3 class="archive-inst-title">SRM Institute of Science & Technology</h3>
+            <p class="archive-degree">B.Tech — Computer Science & Engineering</p>
+            <span class="archive-date-loc">2021 — 2025 · Kattankulathur, Tamil Nadu</span>
+          </div>
+
+          <!-- Divider -->
+          <div class="archive-vertical-divider"></div>
+
+          <!-- Credentials Column -->
+          <div class="archive-cert-block">
+            <span class="archive-meta-label">CREDENTIALS</span>
+            <ul class="archive-cert-list">
+              <li>
+                <span class="cert-bullet">›</span>
+                <span class="cert-name">Oracle OCI Generative AI Professional</span>
+              </li>
+              <li>
+                <span class="cert-bullet">›</span>
+                <span class="cert-name">Oracle Cloud Infrastructure Foundations Associate</span>
+              </li>
+              <li>
+                <span class="cert-bullet">›</span>
+                <span class="cert-name">Agile Business Analysis</span>
+              </li>
+              <li>
+                <span class="cert-bullet">›</span>
+                <span class="cert-name">Cisco Data Analytics Essentials</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Minimal Credentials Transition Bar -->
+        <div class="exp-footer-bar">
+          <a href="#contact" class="next-projects-link">NEXT: CONTACT →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         09 / CONTACT
+         ======================================================== -->
+    <section class="contact-terminal-section" id="contact">
+      <div class="section-container contact-terminal-container">
+
+        <!-- 09 / Section Header -->
+        <div class="contact-header-block">
+          <span class="section-tag">Contact</span>
+          <h2 class="contact-editorial-title">
+            Looking For The Next<br>
+            <span class="contact-accent-text">Interesting Problem.</span>
+          </h2>
+        </div>
+
+        <!-- Focus Areas Editorial Line -->
+        <div class="contact-focus-row">
+          <span class="focus-pill">PRODUCT</span>
+          <span class="focus-sep">·</span>
+          <span class="focus-pill">ENTERPRISE GTM</span>
+          <span class="focus-sep">·</span>
+          <span class="focus-pill">TECHNICAL SOLUTIONS</span>
+          <span class="focus-sep">·</span>
+          <span class="focus-pill">AI & DATA</span> <span class="focus-sep">·</span>
+          <span class="focus-pill">FINTECH</span>
+        </div>
+
+        <!-- Invitation Copy -->
+        <p class="contact-invitation-copy">
+          “If you're building something ambitious, solving a weird problem, or simply want to talk Markets, Business,
+          Products,
+          APIs or AI, say hi.”
+        </p>
+
+        <!-- 3 CTAs -->
+        <div class="contact-cta-group">
+          <a href="mailto:niranjankannan024@gmail.com" class="contact-btn-primary">EMAIL ME →</a>
+          <a href="https://www.linkedin.com/in/niranjan7/" target="_blank" rel="noopener"
+            class="contact-btn-ghost">LINKEDIN →</a>
+          <a href="https://github.com/Nxjndata" target="_blank" rel="noopener" class="contact-btn-ghost">GITHUB →</a>
+        </div>
+
+        <!-- Want the Full Story? CTA -->
+        <div class="contact-story-resume-box">
+          <span class="story-resume-prompt">WANT THE FULL STORY?</span>
+          <a href="https://docs.google.com/document/d/1NgRssnexe0xdr4aTqPyL7jJHcPqORazdeb7kAWC-bGk/edit?usp=sharing" target="_blank" rel="noopener" class="story-resume-link">VIEW RESUME →</a>
+        </div>
+
+        <!-- Bottom Footer & Easter Egg in the Same Line -->
+        <footer class="site-bottom-footer">
+          <div class="footer-left-block">
+            <p class="footer-copy-name">© 2026 Niranjan Kannan</p>
+            <p class="footer-copy-sub">Built with Curiosity.</p>
+
+            <div class="footer-social-links">
+              <!-- Email -->
+              <a href="mailto:niranjankannan024@gmail.com" class="footer-icon-link" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/niranjan7/" target="_blank" rel="noopener" class="footer-icon-link"
+                aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Nxjndata" target="_blank" rel="noopener" class="footer-icon-link"
+                aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+
+              <!-- Medium -->
+              <a href="https://medium.com/@niranjankannan" target="_blank" rel="noopener" class="footer-icon-link"
+                aria-label="Medium" title="Medium">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Easter Egg (Centered in Middle of Page) -->
+          <div class="bottom-easter-egg">
+            <p class="easter-egg-line">You made it this far.</p>
+            <p class="easter-egg-sub">Either you're hiring me<br>or the website is working.</p>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JavaScript Engine -->
+  <script src="main.js?v=3.0"></script>
+</body>
+
+</html>
