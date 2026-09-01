@@ -595,18 +595,74 @@ function preloadImages() {
   }
 }
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-    const targetEl = document.querySelector(targetId);
-    if (targetEl) {
-      e.preventDefault();
-      targetEl.scrollIntoView({ behavior: 'smooth' });
+// ==========================================================================
+// Dynamic ScrollSpy Navigation Engine
+// ==========================================================================
+function setupScrollSpy() {
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sectionIds = ['home', 'about', 'experience', 'projects', 'contact'];
+  const sections = sectionIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+
+  if (!navLinks.length || !sections.length) return;
+
+  function setActive(activeId) {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === `#${activeId}`) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  function updateActiveSection() {
+    const scrollPos = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const scrollBottom = scrollPos + viewportHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    // If near bottom of the document (within 120px), activate contact
+    if (docHeight - scrollBottom < 120) {
+      setActive('contact');
+      return;
     }
+
+    // Determine currently active section
+    let currentId = 'home';
+    const offset = 220; // Trigger threshold below top navbar
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - offset;
+      if (scrollPos >= sectionTop) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    setActive(currentId);
+  }
+
+  // Smooth scroll handler
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || !targetId) return;
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        const navId = targetId.replace('#', '');
+        setActive(navId);
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
-});
+
+  window.addEventListener('scroll', updateActiveSection, { passive: true });
+  window.addEventListener('resize', updateActiveSection, { passive: true });
+  updateActiveSection();
+}
 
 // Interactive Journey Stage Inspector
 function setupLifecycleInspector() {
@@ -717,6 +773,7 @@ function init() {
   setupIntro();
   setupLifecycleInspector();
   setupMetricCounters();
+  setupScrollSpy();
 }
 
 if (document.readyState === 'loading') {
